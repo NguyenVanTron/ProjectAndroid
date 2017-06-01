@@ -72,3 +72,5 @@ o	Nhận thông báo khi có người quyên góp đến tổ chức.
 -	Có một số chức năng thông báo hằng ngày với mục đích kêu gọi người dùng trích một phần nhỏ trong quỹ thường ngày để dành cho những người khó khăn hơn.
 
 GoodBox
+Code chính: VanTron
+Code & design: ThanhTruc
