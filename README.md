@@ -3,7 +3,7 @@ Môi trường phát triển ứng dụng
 -	Hệ điều hành : Android 5.0
 -	Hệ quản trị cơ sở dữ liệu: Firebase Realtime Database (NoSQL Cloud Database)
 -	Công cụ dùng để phân tích, thiết kế: lucidchart.com, creately.com
--	Công cụ đã dùng để xây dựng ứng dụng : Android Studio 2.2.3
+-	Công cụ đã dùng để xây dựng ứng dụng : Android Studio
 -	Các thư viện đã sử dụng : Firebase, google API,…
 Môi trường triển khai ứng dụng:
 -	Hệ điều hành: Android 4.4 kitkat trở lên
