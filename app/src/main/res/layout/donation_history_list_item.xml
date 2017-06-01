@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view_donation_history"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_margin="0dp"
+    card_view:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp">
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cv_history_item">
+
+        <TextView
+            android:id="@+id/txt_name_donor_item"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="60dp"
+            android:text="Đỗ Thanh Trúc"
+            android:maxLines="1"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txt_name_charity_item"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="60dp"
+            android:text="Gửi: Hội chữ thập đỏ"
+            android:maxLines="1"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12sp" />
+    <TextView
+        android:id="@+id/txt_status_item"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="60dp"
+        android:text="Tinh trang"
+        android:maxLines="1"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="12sp" />
+</android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

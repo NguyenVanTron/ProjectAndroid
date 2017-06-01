@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--colorAccent #FF4081 colorPrimary #3F51B5 colorPrimaryDark #303F9F-->
+    <color name="colorPrimary">#78B9EB</color>
+    <color name="colorPrimaryDark">#3C5D76</color>
+    <color name="colorAccent">#3C5D76</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen">#78B9EB</color>
+    <!-- dots active colors -->
+    <color name="dot_light_screen">#C9E3F7</color>
+
+    <color name="welcome_text">#3C5D76</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen</item>
+        <item>@color/dot_light_screen</item>
+        <item>@color/dot_light_screen</item>
+        <item>@color/dot_light_screen</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen</item>
+        <item>@color/dot_dark_screen</item>
+        <item>@color/dot_dark_screen</item>
+        <item>@color/dot_dark_screen</item>
+    </array>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_donor_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Trang chủ" />
+        <item
+            android:id="@+id/nav_donor_list_activity"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Danh sách các hoạt động" />
+        <item
+            android:id="@+id/nav_history_donation"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Lich su quyen gop" />
+        <item
+            android:id="@+id/nav_listcharityorg_activity_donor"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Danh sách tổ chức từ thiện" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>

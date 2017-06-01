@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">GoodBox</string>
+    <string name="title_activity_login">Sign in</string>
+
+
+    <!-- Strings related to categories using when create a donation or activity -->
+    <string name="Vehicle">Phương tiện di chuyển</string>
+    <string name="Clothes">Quần áo, giày dép, trang sức,...</string>
+    <string name="Games">Đồ chơi, dụng cụ thể thao</string>
+    <string name="Education">Sách, vở, băng đĩa, dụng cụ học tập</string>
+    <string name="Housewares">Đồ dùng trong nhà</string>
+    <string name="Electronics">Thiết bị điện tử</string>
+    <string name="Furniture">Trang thiết bị nội thất</string>
+    <string name="Others">Khác</string>
+
+    <!-- Strings related to login and sign up-->
+    <string name="prompt_email">Địa chỉ email</string>
+    <string name="action_signout">Đăng xuất</string>
+    <string name="auth_failed">Đăng kí thất bại</string>
+    <string name="prompt_fullname">Họ và tên</string>
+    <string name="prompt_password">Mật khẩu</string>
+    <string name="prompt_retype_password">Nhập lại mật khẩu</string>
+
+    <string name="error_invalid_email">Địa chỉ email không tồn tại.</string>
+    <string name="error_invalid_password">Mật khẩu cần có ít nhất 6 ký tự.</string>
+    <string name="error_incorrect_password">Mật khẩu không đúng.</string>
+    <string name="error_field_required">Cần nhập mục này.</string>
+    <string name="error_user_exists">Địa chỉ email đã được đăng ký.</string>
+
+    <string name="sign_in">Đăng nhập</string>
+    <string name="sign_in_with_gmail">Đăng nhập bằng Google</string>
+    <string name="sign_up_suggestion">Chưa có tài khoản?</string>
+    <string name="sign_up">Đăng ký</string>
+
+    <!-- Strings related to welcome screen -->
+    <string name="next">TIẾP</string>
+    <string name="skip">BỎ QUA</string>
+    <string name="start">HOÀN TẤT</string>
+
+    <string name="slide_1_title">GoodBox</string>
+    <string name="slide_1_desc">Phần mềm hỗ trợ quyên góp từ thiện\n1412582 - Nguyễn Văn Trọn\n1412593 - Đỗ Thanh Trúc</string>
+
+    <string name="slide_2_title">Chia sẻ...</string>
+    <string name="slide_2_desc">Tặng những món đồ mà bản thân không cần đến cho những người khác!</string>
+
+    <string name="slide_3_title">Chung tay...</string>
+    <string name="slide_3_desc">Hỗ trợ quyên góp cho các tổ chức từ thiện bạn mong muốn!</string>
+
+    <string name="slide_4_title">Tham gia...</string>
+    <string name="slide_4_desc">Được thông báo về các hoạt động tình nguyện sắp sửa diễn ra!</string>
+
+
+    <string name="title_activity_home_charity_organization">HomeCharityOrganizationActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Cài đặt</string>
+    <string name="title_activity_home_donor">HomeDonorActivity</string>
+</resources>

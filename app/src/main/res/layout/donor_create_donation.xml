@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:id="@+id/imageview1"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:id="@+id/imageview2"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:id="@+id/imageview3"
+        android:layout_alignParentRight="true"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+    <Button
+        android:text="Chọn đồ quyên góp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_chose_category_donation" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_category_donor"/>
+    <CheckBox
+        android:text="Quyên góp trực tiếp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/expdropoff"
+        android:onClick="checkBoxExpDrop"/>
+    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+        android:id="@+id/expandableLayoutdrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/expdropoff"
+        android:background="#90ba1f04"
+        android:padding="16dp"
+        app:ael_duration="400"
+        app:ael_expanded="false"
+        app:ael_interpolator="bounce"
+        app:ael_orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dia chi da chon"
+            android:id="@+id/tv_adress_donation"
+            />
+        <Button
+            android:text="Chọn đia diem quyen gop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_adress_donation"
+            android:id="@+id/btn_chose_adress_donation" />
+
+    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+    <CheckBox
+        android:text="Quyên góp tại nhà"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/expfromhome"
+        android:onClick="CheckBoxExpFromeHome"/>
+    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+        android:id="@+id/expandableLayoutfromhome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/expfromhome"
+        android:background="#90ba1f04"
+        android:padding="16dp"
+        app:ael_duration="400"
+        app:ael_expanded="false"
+        app:ael_interpolator="bounce"
+        app:ael_orientation="vertical">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập địa chỉ nhận"
+            android:id="@+id/edit_adress_fromhome"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập tên của bạn"
+            android:id="@+id/editNameDonor"
+            android:layout_below="@+id/edit_adress_fromhome"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập số điện thoại của bạn"
+            android:id="@+id/edityourphone"
+            android:layout_below="@+id/editNameDonor"/>
+    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Mô tả..."
+    android:id="@+id/edit_description_donation"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chấp nhận"
+        android:id="@+id/btndone"/>
+</LinearLayout>
+</ScrollView>

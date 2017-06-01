@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" android:layout_height="match_parent">
+
+        <TextView
+            android:text="Tên hoạt động"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="32dp"
+            android:id="@+id/textView5" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/edit_name"
+            android:layout_alignBaseline="@+id/textView5"
+            android:layout_alignBottom="@+id/textView5"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="26dp"
+            android:hint="Tình nguyện xanh"
+            android:layout_toRightOf="@+id/textView5"/>
+
+        <TextView
+            android:text="Thời gian bắt đầu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView11"
+            android:layout_below="@+id/edit_name"
+            android:layout_alignStart="@+id/textView5"
+            android:layout_marginTop="29dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:layout_below="@+id/edit_name"
+            android:layout_alignStart="@+id/edit_name"
+            android:layout_marginTop="12dp"
+            android:id="@+id/edit_startdate"
+            android:hint="1/1/2017"
+            android:layout_toRightOf="@+id/textView11"/>
+
+        <TextView
+            android:text="Thời gian kết thúc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView12"
+            android:layout_alignBottom="@+id/edit_finishdate"
+            android:layout_alignStart="@+id/textView11" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/edit_finishdate"
+            android:layout_below="@+id/textView11"
+            android:layout_alignStart="@+id/edit_startdate"
+            android:layout_marginTop="20dp"
+            android:hint="15/1/2017"
+            android:layout_toRightOf="@+id/textView12"/>
+
+        <TextView
+            android:text="Mô tả hoạt động"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView12"
+            android:layout_alignStart="@+id/textView12"
+            android:layout_marginTop="54dp"
+            android:id="@+id/textView13" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:layout_below="@+id/textView13"
+            android:layout_alignStart="@+id/textView13"
+            android:layout_marginTop="25dp"
+            android:id="@+id/edit_description"
+            android:layout_alignParentEnd="true"
+            android:layout_height="40dp"
+            android:hint="Hoạt động thuộc chuỗi..."
+            android:fontFamily="sans-serif" />
+
+        <CheckBox
+            android:text="Cần quyên góp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/expandablecheckbox1"
+            android:drawableRight="@android:drawable/arrow_down_float"
+            android:onClick="expandablecheckbox1"
+            android:layout_below="@+id/imagev1"/>
+        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+            android:id="@+id/expandableLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/expandablecheckbox1"
+            android:background="#90ba1f04"
+            android:padding="16dp"
+            app:ael_duration="400"
+            app:ael_expanded="false"
+            app:ael_interpolator="bounce"
+            app:ael_orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/chose"
+                android:text="Loại đồ"
+                />
+            <Button
+                android:text="Chọn đồ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/btn_chose_category" />
+
+        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:id="@+id/imagev1"
+            android:layout_below="@+id/edit_description"
+            app:srcCompat="@android:drawable/ic_menu_gallery" />
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:id="@+id/imagev2"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/edit_description"
+            app:srcCompat="@android:drawable/ic_menu_gallery" />
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:id="@+id/imagev3"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/edit_description"
+            app:srcCompat="@android:drawable/ic_menu_gallery" />
+        <TextView
+            android:id="@+id/tvadress"
+            android:text="Địa chỉ quyên góp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/expandableLayout1"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:text="Lấy tại nhà"q
+            android:id="@+id/ck_fromhome"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvadress"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/expandablecheckbox2"
+            android:drawableRight="@android:drawable/arrow_down_float"
+            android:text="Nhận tại các địa điểm quyên góp"
+            android:onClick="expandablecheckbox2"
+            android:layout_below="@+id/tvadress"
+            android:layout_toRightOf="@+id/ck_fromhome"/>
+        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+            android:id="@+id/expandableLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/expandablecheckbox2"
+            android:background="#90ba1f04"
+            android:padding="16dp"
+            app:ael_duration="400"
+            app:ael_expanded="false"
+            app:ael_interpolator="bounce"
+            app:ael_orientation="vertical">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Địa chỉ quyên góp"
+                android:id="@+id/edit_adress"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_adress"
+                android:text="Địa chỉ quyên góp"
+                android:id="@+id/tvadress2"
+                />
+            <Button
+                android:id="@+id/btn_chose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/txtTen"
+                android:layout_below="@+id/edit_adress"
+                android:layout_toRightOf="@+id/tvadress2"
+                android:textAlignment="center"
+                android:text="Thêm địa chỉ" />
+
+        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+        <ListView
+            android:id="@+id/lv_adress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/expandableLayout2"
+            android:background="#cccccc">
+        </ListView>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tạo hoạt động"
+            android:id="@+id/btn_create_activity"
+            android:layout_below="@+id/lv_adress"/>
+    </RelativeLayout>
+</ScrollView>
